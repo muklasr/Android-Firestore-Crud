@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "772606317618",
+    "firebase_url": "https://latihan-12d87.firebaseio.com",
+    "project_id": "latihan-12d87",
+    "storage_bucket": "latihan-12d87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772606317618:android:6149415e9141ed3582582b",
+        "android_client_info": {
+          "package_name": "com.muklas.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772606317618-1lbi4h5hv2sus8almhai9dee185iiovs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO039cURHbpvRG9tCrtCbCncRyMm2VbW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772606317618-1lbi4h5hv2sus8almhai9dee185iiovs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
