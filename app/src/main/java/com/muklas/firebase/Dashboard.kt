@@ -19,26 +19,12 @@ class Dashboard : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
-
-        db.collection("buku").addSnapshotListener { querySnapshot, firebaseFirestoreException ->
-            if(querySnapshot != null) {
+        db.collection("buku").addSnapshotListener { querySnapshot, _ ->
+            if (querySnapshot != null) {
                 list.clear()
                 loadData()
             }
         }
-
-//        UPDATE
-//        db.collection("buku").document("Csy12X2wZP72tDR2OD4m")
-//            .update(mapOf(
-//                "judul" to "Ini judul2"
-//            ))
-//            .addOnSuccessListener {
-//                Toast.makeText(this, "Berhasil", Toast.LENGTH_LONG).show()
-//            }
-//            .addOnFailureListener {
-//                Toast.makeText(this, "Gagal", Toast.LENGTH_LONG).show()
-//            }
-
 
         btnAdd.setOnClickListener {
             val i = Intent(this, AddActivity::class.java)
@@ -53,6 +39,7 @@ class Dashboard : AppCompatActivity() {
             .addOnSuccessListener { result ->
                 for (document in result) {
                     val buku = Buku(
+                        document.id,
                         document.data["judul"].toString(),
                         document.data["deskripsi"].toString(),
                         document.data["penulis"].toString(),

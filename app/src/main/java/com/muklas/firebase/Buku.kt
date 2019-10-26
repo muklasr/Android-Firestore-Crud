@@ -1,6 +1,6 @@
 package com.muklas.firebase
 
-class Buku (val title: String,val desc: String, val writer: String, val publisher: String,val year: String,val genre: String,val image: String){
+class Buku (val id: String,val title: String,val desc: String, val writer: String, val publisher: String,val year: String,val genre: String,val image: String){
     fun toHashMap(): HashMap<String, String> = hashMapOf(
         "judul" to this.title,
         "deskripsi" to this.desc,

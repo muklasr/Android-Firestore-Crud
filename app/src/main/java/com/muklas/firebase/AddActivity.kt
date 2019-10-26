@@ -20,7 +20,7 @@ class AddActivity : AppCompatActivity() {
             val year = etYear.text.toString()
             val genre = etGenre.text.toString()
 
-            val buku = Buku(title, desc, writer, publisher, year, genre, "")
+            val buku = Buku("", title, desc, writer, publisher, year, genre, "")
 
             val db = FirebaseFirestore.getInstance()
 
