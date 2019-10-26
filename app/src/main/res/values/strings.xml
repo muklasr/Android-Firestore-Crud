@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Firebase</string>
+    <string name="simpan">Simpan</string>
+    <string name="genre">Genre</string>
+    <string name="tahun">Tahun</string>
+    <string name="penerbit">Penerbit</string>
+    <string name="penulis">Penulis</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="judul">Judul</string>
+    <string name="tambah_buku">Tambah buku</string>
 </resources>
