@@ -1,16 +1,11 @@
 package com.muklas.firebase
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.google.firebase.firestore.FirebaseFirestore
-import kotlinx.android.synthetic.main.activity_update.btnSave
-import kotlinx.android.synthetic.main.activity_update.etDesc
-import kotlinx.android.synthetic.main.activity_update.etGenre
-import kotlinx.android.synthetic.main.activity_update.etPublisher
-import kotlinx.android.synthetic.main.activity_update.etTitle
-import kotlinx.android.synthetic.main.activity_update.etWriter
-import kotlinx.android.synthetic.main.activity_update.etYear
+import kotlinx.android.synthetic.main.activity_update.*
 
 class UpdateActivity : AppCompatActivity() {
 
@@ -24,6 +19,10 @@ class UpdateActivity : AppCompatActivity() {
         etPublisher.setText(intent.getStringExtra("publisher"))
         etYear.setText(intent.getStringExtra("year"))
         etGenre.setText(intent.getStringExtra("genre"))
+
+        btnBack.setOnClickListener{
+            finish()
+        }
 
         btnSave.setOnClickListener {
             val db = FirebaseFirestore.getInstance()
